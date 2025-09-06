@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <style>
+    body {   
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      }
+    .card {
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      background: #2563eb;
+      color: white;
+    }
+    .output {
+      margin-top: 20px;
+      text-align: left;
+      background: #f9fafb;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Profile Generator</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="number" id="age" placeholder="Enter your age">
+    <input type="text" id="country" placeholder="Enter your country">
+    <input type="text" id="job" placeholder="Enter your job">
+    <button onclick="generateProfile()">Generate</button>
+
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
